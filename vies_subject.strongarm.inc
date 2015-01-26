@@ -81,7 +81,7 @@ function vies_subject_strongarm() {
   $strongarm->name = 'node_options_vies_subject';
   $strongarm->value = array(
     0 => 'status',
-    1 => 'promote',
+    1 => 'revision',
   );
   $export['node_options_vies_subject'] = $strongarm;
 
