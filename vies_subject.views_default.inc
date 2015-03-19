@@ -36,8 +36,8 @@ function vies_subject_views_default_views() {
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'responsive_grid';
-  $handler->display->display_options['style_options']['wrapper_classes'] = 'container-fluid span12';
-  $handler->display->display_options['style_options']['column_classes'] = 'views-column span4';
+  $handler->display->display_options['style_options']['wrapper_classes'] = 'container-fluid col-md-12';
+  $handler->display->display_options['style_options']['column_classes'] = 'views-column col-md-4';
   $handler->display->display_options['row_plugin'] = 'node';
   $handler->display->display_options['row_options']['links'] = FALSE;
   /* Field: Field: Image */
@@ -85,8 +85,8 @@ function vies_subject_views_default_views() {
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'responsive_grid';
   $handler->display->display_options['style_options']['columns'] = '3';
-  $handler->display->display_options['style_options']['wrapper_classes'] = 'container span12';
-  $handler->display->display_options['style_options']['column_classes'] = 'views-column span4 vies-slanted-box';
+  $handler->display->display_options['style_options']['wrapper_classes'] = 'container col-md-12';
+  $handler->display->display_options['style_options']['column_classes'] = 'views-column col-md-4 vies-slanted-box';
   $handler->display->display_options['style_options']['row_classes'] = 'views-row row-fluid';
   $handler->display->display_options['defaults']['style_options'] = FALSE;
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
@@ -171,7 +171,7 @@ function vies_subject_views_default_views() {
   $handler->display->display_options['cache']['output_lifespan_custom'] = '0';
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'default';
-  $handler->display->display_options['style_options']['row_class'] = 'span6';
+  $handler->display->display_options['style_options']['row_class'] = 'col-md-6';
   $handler->display->display_options['defaults']['style_options'] = FALSE;
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['row_plugin'] = 'fields';
@@ -195,7 +195,7 @@ function vies_subject_views_default_views() {
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['title']['alter']['text'] = '[title] <i class="icon-circle-arrow-right"></i>';
+  $handler->display->display_options['fields']['title']['alter']['text'] = '[title] <i class="fa fa-arrow-circle-right"></i>';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_type'] = 'h3';
@@ -230,8 +230,8 @@ function vies_subject_views_default_views() {
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'responsive_grid';
   $handler->display->display_options['style_options']['columns'] = '3';
-  $handler->display->display_options['style_options']['wrapper_classes'] = 'container span12';
-  $handler->display->display_options['style_options']['column_classes'] = 'views-column span4 vies-slanted-box';
+  $handler->display->display_options['style_options']['wrapper_classes'] = 'container col-md-12';
+  $handler->display->display_options['style_options']['column_classes'] = 'views-column col-md-4 vies-slanted-box';
   $handler->display->display_options['defaults']['style_options'] = FALSE;
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['row_plugin'] = 'fields';
@@ -266,7 +266,7 @@ function vies_subject_views_default_views() {
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['title']['alter']['text'] = '[title] <i class="icon-circle-arrow-right"></i>';
+  $handler->display->display_options['fields']['title']['alter']['text'] = '[title] <i class="fa fa-arrow-circle-right"></i>';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_type'] = 'h3';
@@ -301,7 +301,7 @@ function vies_subject_views_default_views() {
     t('VIES'),
     t('Frontpage Pane'),
     t('Indholdselement Queue'),
-    t('[title] <i class="icon-circle-arrow-right"></i>'),
+    t('[title] <i class="fa fa-arrow-circle-right"></i>'),
     t('Sport Pane'),
   );
   $export['vies_subjects'] = $view;
