@@ -15,7 +15,7 @@ function vies_subject_entityqueue_default_queues() {
   $queue->api_version = 1;
   $queue->name = 'frontpage_subjects';
   $queue->label = 'Frontpage Subjects';
-  $queue->language = 'en';
+  $queue->language = 'da';
   $queue->handler = 'simple';
   $queue->target_type = 'node';
   $queue->settings = array(
